@@ -96,7 +96,7 @@ namespace checkComputer
 
         }
 
-        private void btnAddRemoteDesktopUser_Click(object sender, RoutedEventArgs e)
+        private void btnAddRDU_Click(object sender, RoutedEventArgs e)
         {
             groupName = "Remote Desktop Users";
             username = txtUUN.Text.ToString();
@@ -109,6 +109,46 @@ namespace checkComputer
 
             }
         }
+
+        private void btnRemoveAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            groupName = "administrators";
+            username = lstAdministrators.SelectedItem.ToString();
+            aUsers = checkUser.removeUser(cpuName, groupName, username);
+            lstAdministrators.Items.Clear();
+
+            foreach (String user in aUsers)
+            {
+                lstAdministrators.Items.Add(user.ToString());
+
+            }
+        }
+
+        private void btnRemoveRDU_Click(object sender, RoutedEventArgs e)
+        {
+            groupName = "remote desktop users";
+            username = lstRemoteDesktop.SelectedItem.ToString();
+            rUsers = checkUser.removeUser(cpuName, groupName, username);
+            lstRemoteDesktop.Items.Clear();
+
+            foreach (String user in rUsers)
+            {
+                lstRemoteDesktop.Items.Add(user.ToString());
+
+            }
+        }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void txtUUN_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+       
     }
 
 }

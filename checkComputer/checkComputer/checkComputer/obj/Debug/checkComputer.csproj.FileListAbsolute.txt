@@ -24,3 +24,34 @@ C:\Users\Bradley\Documents\checkComputer\checkComputer\checkComputer\obj\Debug\c
 C:\Users\Bradley\Documents\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.csproj.GenerateResource.Cache
 C:\Users\Bradley\Documents\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.exe
 C:\Users\Bradley\Documents\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.pdb
+C:\Users\Bradley\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.exe.config
+C:\Users\Bradley\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.exe
+C:\Users\Bradley\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.pdb
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.exe.config
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.exe
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.pdb
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.exe
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.pdb
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.csprojResolveAssemblyReference.cache
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\MainWindow.baml
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\MainWindow.g.cs
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\App.g.cs
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer_MarkupCompile.cache
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.g.resources
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.Properties.Resources.resources
+C:\Dropbox\C Sharep Admin\Latest\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.csproj.GenerateResource.Cache
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.exe.config
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.exe
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.pdb
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.exe
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\bin\Debug\checkComputer.pdb
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.csprojResolveAssemblyReference.cache
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\MainWindow.baml
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\MainWindow.g.cs
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\App.g.cs
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer_MarkupCompile.cache
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.g.resources
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.Properties.Resources.resources
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkComputer.csproj.GenerateResource.Cache
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkAdmin.baml
+C:\Users\Bradley\Documents\check-Admin\checkComputer\checkComputer\checkComputer\obj\Debug\checkAdmin.g.cs

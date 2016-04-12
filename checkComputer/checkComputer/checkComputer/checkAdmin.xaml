@@ -1,0 +1,30 @@
+﻿<Window x:Class="checkComputer.checkAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="checkAdmin" Height="400" Width="800">
+    <Grid>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="-1,0,0,0" VerticalAlignment="Top" Width="221" Background="#FFF13E3E">
+            <Label x:Name="lblTitle" Content="Check Admin" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="#FFFFFBFB" FontFamily="Corbel" Height="56" Margin="21.667,8.667,0,0" Width="188"/>
+        </Border>
+        <TabControl TabStripPlacement="Left" HorizontalAlignment="Left" Height="300" Margin="0,67,0,0" VerticalAlignment="Top" Width="796" >
+            <TabItem Header="Home" Width="215" Height="60" Background="#FF827878">
+                <Grid Background="#FFE5E5E5">
+                    <ListView HorizontalAlignment="Left" Height="257" VerticalAlignment="Top" Width="573" Margin="0,0,-0.333,0">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Administrators" Height="60">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Remote Desktop Users" Height="60">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

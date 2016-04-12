@@ -7,14 +7,7 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="lstAdministrators" HorizontalAlignment="Left" Height="227" Margin="300,210,0,0" VerticalAlignment="Top" Width="189" Background="{x:Null}" Foreground="Black" BorderBrush="#FF040404"/>
-        <Label x:Name="lblAdministrators" Content="Administrators" HorizontalAlignment="Left" Margin="322,171,0,0" VerticalAlignment="Top" Height="34" Width="143" FontFamily="Corbel" FontSize="20"/>
-        <ListBox x:Name="lstRemoteDesktop" HorizontalAlignment="Left" Height="227" Margin="595,210,0,0" VerticalAlignment="Top" Width="189" Background="{x:Null}"/>
-        <Label x:Name="lblAdministrators_Copy" Content="Remote Deskktop" HorizontalAlignment="Left" Margin="612,172,0,0" VerticalAlignment="Top" Height="38" Width="163" FontFamily="Corbel" FontSize="20"/>
-        <Label x:Name="lblUUN" Content="UUN" HorizontalAlignment="Left" Margin="259,102,0,0" VerticalAlignment="Top" Height="31" Width="53" FontFamily="Corbel" FontSize="20" RenderTransformOrigin="-0.914,2.462"/>
-        <TextBox x:Name="txtUUN" HorizontalAlignment="Left" Height="22" Margin="317,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
-        <Button x:Name="btnAddAdmin" Content="Add Admin" HorizontalAlignment="Left" Margin="464,108,0,0" VerticalAlignment="Top" Width="83" Click="btnAddAdmin_Click" Height="22"/>
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="484" Margin="-1,57,0,-1" VerticalAlignment="Top" Width="221" Background="#FF514C4C"/>
+
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="-1,0,0,0" VerticalAlignment="Top" Width="221" Background="#FFF13E3E">
             <Border BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="220,-1,-662,-1" VerticalAlignment="Top" Width="661" Background="#FFFFFEFE"/>
         </Border>
@@ -22,8 +15,41 @@
         <Label x:Name="lblCpuName" Content="Computer Name" HorizontalAlignment="Left" Margin="247,19,0,0" VerticalAlignment="Top" Height="31" Width="153" FontFamily="Corbel" FontSize="18"/>
         <TextBox x:Name="txtCpuName" HorizontalAlignment="Left" Height="23" Margin="425,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262"/>
         <Button x:Name="btnGo" Content="Go" HorizontalAlignment="Left" Margin="692,26,0,0" VerticalAlignment="Top" Width="83" Click="btnGo_Click" Height="22"/>
-        <Button x:Name="btnAddRemoteDesktopUser" Content="Add Remote Desktop User" HorizontalAlignment="Left" Margin="561,108,0,0" VerticalAlignment="Top" Width="152" Click="btnAddRemoteDesktopUser_Click" Height="22"/>
-        <Label x:Name="lblHostStatus" Content="Host Status: Unknown" HorizontalAlignment="Left" Margin="220,67,0,0" VerticalAlignment="Top"/>
+        <TabControl TabStripPlacement="Left" HorizontalAlignment="Left" Height="478" Margin="0,67,0,0" VerticalAlignment="Top" Width="880">
+            <TabItem Header="Home" Width="215" Height="70">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="lblHostStatus" Content="Host Status: Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137"/>
+                    <Label x:Name="lblUUN" Content="UUN" HorizontalAlignment="Left" Margin="77,77,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtUUN" HorizontalAlignment="Left" Height="23" Margin="128,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtUUN_TextChanged"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Administrators" Width="215" Height="70">
+                <Grid Background="#FFE5E5E5">
+                    <ListView x:Name="lstAdministrators" HorizontalAlignment="Left" Height="317" VerticalAlignment="Top" Width="609">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Button x:Name="btnAddAdmin" Content="Add Admin" HorizontalAlignment="Left" Margin="113,386,0,0" VerticalAlignment="Top" Width="182" Click="btnAddAdmin_Click"/>
+                    <Button x:Name="btnRemoveAdmin" Content="Remove Admin" HorizontalAlignment="Left" Margin="344,386,0,0" VerticalAlignment="Top" Width="182" Click="btnRemoveAdmin_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Remote Desktop Users" Width="215" Height="70">
+                <Grid Background="#FFE5E5E5">
+                    <ListView x:Name="lstRemoteDesktop" HorizontalAlignment="Left" Height="317" VerticalAlignment="Top" Width="609">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Button x:Name="btnAddRDU" Content="Add RDU" HorizontalAlignment="Left" Margin="113,386,0,0" VerticalAlignment="Top" Width="182" Click="btnAddRDU_Click"/>
+                    <Button x:Name="btnRemoveRDU" Content="Remove RDU" HorizontalAlignment="Left" Margin="335,386,0,0" VerticalAlignment="Top" Width="182" Click="btnRemoveRDU_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>

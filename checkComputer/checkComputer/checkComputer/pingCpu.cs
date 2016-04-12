@@ -15,6 +15,7 @@ namespace checkComputer
     {
         public static bool PingHost (string host)
         {
+            string test;
             string returnMessage = string.Empty;
             bool online = false; 
             IPAddress ipa;
@@ -30,14 +31,14 @@ namespace checkComputer
             {
                 try
                 {
-                    PingReply pingReply = ping.Send(ipa,1000,buffer,pingOptions);
+                    PingReply pingReply =  ping.Send(ipa,1000,buffer,pingOptions);
                     if (!(pingReply == null))
                     {
                         switch (pingReply.Status)
                         {
 
                             case IPStatus.Success:
-                                returnMessage = string.Format("Reply from {0}: bytes={1} time={2}ms TTL={3}", pingReply.Address, pingReply.Buffer.Length, pingReply.RoundtripTime, pingReply.Options.Ttl);
+                                returnMessage = string.Format("Reply from {0}: bytes={1} time={2}ms TTL={3}", pingReply.Address, pingReply.Buffer.Length, pingReply.RoundtripTime, "6"/*pingReply.Options.Ttl*/);
                                 online = true;
                                 break;
                             case IPStatus.TimedOut:

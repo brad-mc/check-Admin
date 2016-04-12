@@ -43,5 +43,17 @@ namespace checkComputer
             users = groupCheck(cpuName, groupName);
             return users;
         }
+
+        public static List<String> removeUser(string cpuName, string groupName, string username)
+        {
+
+            DirectoryEntry localMachine = new DirectoryEntry("WinNT://" + cpuName);
+            DirectoryEntry group = localMachine.Children.Find(groupName, "group");
+            List<String> users = new List<string>();
+            group.Invoke("Remove", new object[] { "WinNT://ED/" + username });
+            group.CommitChanges();
+            users = groupCheck(cpuName, groupName);
+            return users;
+        }
     }
 }
