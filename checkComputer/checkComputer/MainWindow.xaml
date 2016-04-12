@@ -1,0 +1,28 @@
+﻿<Window x:Class="checkComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Check Computer" Height="570" Width="884">
+    <Grid Background="#FFE8ECEC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lstAdministrators" HorizontalAlignment="Left" Height="227" Margin="300,210,0,0" VerticalAlignment="Top" Width="189" Background="{x:Null}" Foreground="Black" BorderBrush="#FF040404"/>
+        <Label x:Name="lblAdministrators" Content="Administrators" HorizontalAlignment="Left" Margin="322,171,0,0" VerticalAlignment="Top" Height="34" Width="143" FontFamily="Corbel" FontSize="20"/>
+        <ListBox x:Name="lstRemoteDesktop" HorizontalAlignment="Left" Height="227" Margin="595,210,0,0" VerticalAlignment="Top" Width="189" Background="{x:Null}"/>
+        <Label x:Name="lblAdministrators_Copy" Content="Remote Deskktop" HorizontalAlignment="Left" Margin="612,172,0,0" VerticalAlignment="Top" Height="38" Width="163" FontFamily="Corbel" FontSize="20"/>
+        <Label x:Name="lblUUN" Content="UUN" HorizontalAlignment="Left" Margin="259,102,0,0" VerticalAlignment="Top" Height="31" Width="53" FontFamily="Corbel" FontSize="20" RenderTransformOrigin="-0.914,2.462"/>
+        <TextBox x:Name="txtUUN" HorizontalAlignment="Left" Height="22" Margin="317,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+        <Button x:Name="btnAddAdmin" Content="Add Admin" HorizontalAlignment="Left" Margin="464,108,0,0" VerticalAlignment="Top" Width="83" Click="btnAddAdmin_Click" Height="22"/>
+        <Button x:Name="btnAddRemoteDesktop" Content="Add Remote Desktop" HorizontalAlignment="Left" Margin="559,108,0,0" VerticalAlignment="Top" Width="128" Click="btnGo_Click" Height="22"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="484" Margin="-1,57,0,-1" VerticalAlignment="Top" Width="221" Background="#FF514C4C"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="-1,0,0,0" VerticalAlignment="Top" Width="221" Background="#FFF13E3E">
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="220,-1,-662,-1" VerticalAlignment="Top" Width="661" Background="#FFFFFEFE"/>
+        </Border>
+        <Label x:Name="lblTitle" Content="Check Admin" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="#FFFFFBFB" FontFamily="Corbel"/>
+        <Label x:Name="lblCpuName" Content="Computer Name" HorizontalAlignment="Left" Margin="247,19,0,0" VerticalAlignment="Top" Height="31" Width="153" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="txtCpuName" HorizontalAlignment="Left" Height="23" Margin="425,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262"/>
+        <Button x:Name="btnGo" Content="Go" HorizontalAlignment="Left" Margin="692,26,0,0" VerticalAlignment="Top" Width="83" Click="btnGo_Click" Height="22"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,6 @@
+\\sg.datastore.ed.ac.uk\sg\usd\users\bmcleish\visual studio 2013\Projects\adminTest\adminTest\bin\Debug\adminTest.exe.config
+\\sg.datastore.ed.ac.uk\sg\usd\users\bmcleish\Visual Studio 2013\Projects\adminTest\adminTest\obj\Debug\adminTest.csprojResolveAssemblyReference.cache
+\\sg.datastore.ed.ac.uk\sg\usd\users\bmcleish\Visual Studio 2013\Projects\adminTest\adminTest\bin\Debug\adminTest.exe
+\\sg.datastore.ed.ac.uk\sg\usd\users\bmcleish\Visual Studio 2013\Projects\adminTest\adminTest\bin\Debug\adminTest.pdb
+\\sg.datastore.ed.ac.uk\sg\usd\users\bmcleish\Visual Studio 2013\Projects\adminTest\adminTest\obj\Debug\adminTest.exe
+\\sg.datastore.ed.ac.uk\sg\usd\users\bmcleish\Visual Studio 2013\Projects\adminTest\adminTest\obj\Debug\adminTest.pdb
