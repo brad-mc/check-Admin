@@ -10,3 +10,9 @@ C:\Users\Bradley\Documents\adminTest\adminTest\adminTest\obj\Debug\adminTest.pdb
 C:\Users\Bradley\Documents\adminTest\adminTest\adminTest\bin\Debug\adminTest.exe
 C:\Users\Bradley\Documents\adminTest\adminTest\adminTest\bin\Debug\adminTest.pdb
 C:\Users\Bradley\Documents\adminTest\adminTest\adminTest\obj\Debug\adminTest.csprojResolveAssemblyReference.cache
+C:\check-Admin\adminTest\adminTest\adminTest\bin\Debug\adminTest.exe.config
+C:\check-Admin\adminTest\adminTest\adminTest\obj\Debug\adminTest.exe
+C:\check-Admin\adminTest\adminTest\adminTest\obj\Debug\adminTest.pdb
+C:\check-Admin\adminTest\adminTest\adminTest\bin\Debug\adminTest.exe
+C:\check-Admin\adminTest\adminTest\adminTest\bin\Debug\adminTest.pdb
+C:\check-Admin\adminTest\adminTest\adminTest\obj\Debug\adminTest.csprojResolveAssemblyReference.cache

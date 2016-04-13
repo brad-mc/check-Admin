@@ -27,6 +27,7 @@ namespace checkComputer
         string cpuName;
         string groupName;
         string username;
+        string pingMessage;
         List<String> aUsers = new List<string>();
         List<String> rUsers = new List<string>();
         bool online;
@@ -43,31 +44,35 @@ namespace checkComputer
 
             cpuName = txtCpuName.Text.ToString();
             groupName = "administrators";
-            online = pingCpu.PingHost(cpuName);
+            online = pingCpu.PingHost(cpuName).Item1;
+            pingMessage = pingCpu.PingHost(cpuName).Item2;
             if (online == true)
             {
                 lblHostStatus.Content = "Host Status: ONLINE";
+
+                aUsers = checkUser.groupCheck(cpuName, groupName);
+                groupName = "Remote Desktop Users";
+                rUsers = checkUser.groupCheck(cpuName, groupName);
+
+                foreach (String user in aUsers)
+                {
+                    lstAdministrators.Items.Add(user.ToString());
+
+                }
+
+                foreach (String user in rUsers)
+                {
+                    lstRemoteDesktop.Items.Add(user.ToString());
+                }
+
             }
             else 
             {
                 lblHostStatus.Content = "Host Status: OFFLINE";
             
             }
-
-            aUsers = checkUser.groupCheck(cpuName, groupName);
-            groupName = "Remote Desktop Users";
-            rUsers = checkUser.groupCheck(cpuName, groupName);
-
-            foreach (String user in aUsers)
-            {
-                lstAdministrators.Items.Add(user.ToString());
-
-            }
-
-            foreach (String user in rUsers)
-            {
-                lstRemoteDesktop.Items.Add(user.ToString());
-            }
+            txtPingMessage.Text = pingMessage;
+            
 
 
 
@@ -84,7 +89,7 @@ namespace checkComputer
         private void btnAddAdmin_Click(object sender, RoutedEventArgs e)
         {
             groupName = "administrators";
-            username = txtUUN.Text.ToString();
+         //   username = txtUUN.Text.ToString();
             aUsers = checkUser.addUser(cpuName, groupName, username);
             lstAdministrators.Items.Clear();
 
@@ -99,7 +104,7 @@ namespace checkComputer
         private void btnAddRDU_Click(object sender, RoutedEventArgs e)
         {
             groupName = "Remote Desktop Users";
-            username = txtUUN.Text.ToString();
+        //    username = txtUUN.Text.ToString();
             rUsers = checkUser.addUser(cpuName, groupName, username);
             lstRemoteDesktop.Items.Clear();
 

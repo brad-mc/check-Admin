@@ -19,8 +19,7 @@
             <TabItem Header="Home" Width="215" Height="70">
                 <Grid Background="#FFE5E5E5">
                     <Label x:Name="lblHostStatus" Content="Host Status: Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137"/>
-                    <Label x:Name="lblUUN" Content="UUN" HorizontalAlignment="Left" Margin="77,77,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txtUUN" HorizontalAlignment="Left" Height="23" Margin="128,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtUUN_TextChanged"/>
+                    <TextBox x:Name="txtPingMessage" HorizontalAlignment="Left" Height="242" Margin="114,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Administrators" Width="215" Height="70">

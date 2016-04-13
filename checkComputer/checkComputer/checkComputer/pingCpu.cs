@@ -13,7 +13,7 @@ namespace checkComputer
 {
     class pingCpu
     {
-        public static bool PingHost (string host)
+        public static Tuple <bool, string> PingHost (string host)
         {
             string test;
             string returnMessage = string.Empty;
@@ -68,7 +68,7 @@ namespace checkComputer
             }
 
 
-            return online;
+            return Tuple.Create(online,returnMessage);
  
 
 
